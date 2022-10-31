@@ -47,7 +47,7 @@ def locindex(c):
                 return loc
 #Encryption part
 def encrypt():  
-    msg=str(input("ENTER MSG:  "))
+    msg=str(input("ENTER word:  "))
     msg=msg.upper()
     msg=msg.replace(" ", "")             
     i=0
@@ -90,17 +90,12 @@ def decrypt():
             
             
            
-            #print(plain)
-        elif loc[0]==loc1[0]:
-            #print("{}{}".format(my_matrix[loc[0]][(loc[1]-1)%5],my_matrix[loc1[0]][(loc1[1]-1)%5]),end=' ')  
+        elif loc[0]==loc1[0]: 
             l1=my_matrix[loc[0]][(loc[1]-1)%5]
             l2=my_matrix[loc1[0]][(loc1[1]-1)%5]
-            #print(plain)
-        else:
-            #print("{}{}".format(my_matrix[loc[0]][loc1[1]],my_matrix[loc1[0]][loc[1]]),end=' ')    
+        else:   
             l1=my_matrix[loc[0]][loc1[1]]
             l2=my_matrix[loc1[0]][loc[1]]
-            #print(plain)
         plain+=l1
         plain+=l2
         i=i+2    
