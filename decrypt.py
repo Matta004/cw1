@@ -85,7 +85,6 @@ def decrypt():
         loc1=locindex(msg[i+1])
         
         if loc[1]==loc1[1]:
-            #print("{}{}".format(my_matrix[(loc[0]-1)%5][loc[1]],my_matrix[(loc1[0]-1)%5][loc1[1]]),end=' ')
             l1=my_matrix[(loc[0]-1)%5][loc[1]]
             l2=my_matrix[(loc1[0]-1)%5][loc1[1]]
             
