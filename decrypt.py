@@ -109,6 +109,7 @@ while(1):
     elif choice==2:
         decrypt()
     elif choice==3:
+        print("Thank you for using this program. bye bye :)")
         exit()
     else:
         print("Choose correct choice")
