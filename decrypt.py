@@ -77,18 +77,36 @@ def decrypt():
     msg=msg.replace(" ", "")
     print("PLAIN TEXT:",end=' ')
     i=0
+    plain=""
     while i<len(msg):
         loc=list()
         loc=locindex(msg[i])
         loc1=list()
         loc1=locindex(msg[i+1])
+        
         if loc[1]==loc1[1]:
-            print("{}{}".format(my_matrix[(loc[0]-1)%5][loc[1]],my_matrix[(loc1[0]-1)%5][loc1[1]]),end=' ')
+            #print("{}{}".format(my_matrix[(loc[0]-1)%5][loc[1]],my_matrix[(loc1[0]-1)%5][loc1[1]]),end=' ')
+            l1=my_matrix[(loc[0]-1)%5][loc[1]]
+            l2=my_matrix[(loc1[0]-1)%5][loc1[1]]
+            
+            
+           
+            #print(plain)
         elif loc[0]==loc1[0]:
-            print("{}{}".format(my_matrix[loc[0]][(loc[1]-1)%5],my_matrix[loc1[0]][(loc1[1]-1)%5]),end=' ')  
+            #print("{}{}".format(my_matrix[loc[0]][(loc[1]-1)%5],my_matrix[loc1[0]][(loc1[1]-1)%5]),end=' ')  
+            l1=my_matrix[loc[0]][(loc[1]-1)%5]
+            l2=my_matrix[loc1[0]][(loc1[1]-1)%5]
+            #print(plain)
         else:
-            print("{}{}".format(my_matrix[loc[0]][loc1[1]],my_matrix[loc1[0]][loc[1]]),end=' ')    
-        i=i+2        
+            #print("{}{}".format(my_matrix[loc[0]][loc1[1]],my_matrix[loc1[0]][loc[1]]),end=' ')    
+            l1=my_matrix[loc[0]][loc1[1]]
+            l2=my_matrix[loc1[0]][loc[1]]
+            #print(plain)
+        plain+=l1
+        plain+=l2
+        i=i+2    
+   # plain=plain.replace(" ","")  
+    print(plain)  
 #If condition to make choices eather to Encrypt, Decrypt or Exit
 while(1):
     choice=int(input("\n 1.Encryption \n 2.Decryption: \n 3.EXIT   "))
