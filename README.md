@@ -10,3 +10,5 @@ which is the encrypted text we need. After this, the programme will return to th
 Decrypting the cypher text output requires pressing "2" to execute the decryption algorithm. After entering the text to be decrypted, as shown in (fig1.4),
 the user will receive the decrypted text/phrase, which in this example was "COVENTRY," the word that was initially encrypted. If you press "3" to quit, 
 the app will thank you and shut down. Run the system again.
+
+![picture1](https://github.com/Matta004/cw1/blob/main/images/Picture3.png)
