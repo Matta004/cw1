@@ -1,3 +1,6 @@
+
+![GIF images](https://media.giphy.com/media/fmkYSBlJt3XjNF6p9c/giphy.gif)
+
 After greeting the user, the programme will tell them to "Enter key (Choose a word with no repeating letter[example: *keyword*]):". 
 Keys are needed. This keyword, as shown in the first part of (fig1.2), can be any English word or phrase, but it must not contain duplicate characters. 
 After entering the key, you can encrypt or decrypt the text or exit the programme. Select this after entering the key. As shown in the middle of (fig1.2), 
