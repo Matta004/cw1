@@ -4,6 +4,9 @@ print ("Welcome to the playfare encrypter ")
 key=input("Enter key(Choose a word with no repeating letter[example: *keyword*]):  ")
 key=key.replace(" ", "")
 key=key.upper()
+with open('key text', 'w') as f:
+    f.write(key)
+
 def matrix(x,y,initial):
     return [[initial for i in range(x)] for j in range(y)]
     
@@ -51,6 +54,9 @@ def encrypt():
     msg=msg.upper()
     msg=msg.replace(" ", "")             
     i=0
+    with open('Encrypted text', 'w') as f:
+        f.write(msg)
+
     for s in range(0,len(msg)+1,2):
         if s<len(msg)-1:
             if msg[s]==msg[s+1]:
@@ -69,7 +75,8 @@ def encrypt():
             print("{}{}".format(my_matrix[loc[0]][(loc[1]+1)%5],my_matrix[loc1[0]][(loc1[1]+1)%5]),end=' ')  
         else:
             print("{}{}".format(my_matrix[loc[0]][loc1[1]],my_matrix[loc1[0]][loc[1]]),end=' ')    
-        i=i+2        
+        i=i+2      
+  
 #decryption
 def decrypt(): 
     msg=str(input("ENTER CIPHER TEXT:  "))
@@ -78,6 +85,8 @@ def decrypt():
     print("PLAIN TEXT:",end=' ')
     i=0
     plain=""
+    with open('decrypted text', 'w') as f:
+        f.write(msg)
     while i<len(msg):
         loc=list()
         loc=locindex(msg[i])
