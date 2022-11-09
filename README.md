@@ -1,15 +1,15 @@
 
 ![GIF images](https://media.giphy.com/media/fmkYSBlJt3XjNF6p9c/giphy.gif)
 
-After greeting the user, the programme will tell them to "Enter key (Choose a word with no repeating letter[example: *keyword*]):". 
+After greeting the user, the programme will ask them to "Enter key (Choose a word with no repeating letter[example: *keyword*]):". 
 Keys are needed. This keyword, as shown in the first part of (fig1.2)
 
 ![picture1](https://github.com/Matta004/cw1/blob/main/images/Picture3.png)
 
 Figure 1.2, 
 
-can be any English word or phrase, but it must not contain duplicate characters. 
-After entering the key, you can encrypt or decrypt the text or exit the programme. Select this after entering the key. As shown in the middle of (fig1.2), 
+must be an English word, but it must not contain duplicate characters or the letter "j". 
+After entering the key, the program is going to save the key in a file,then you can encrypt or decrypt the text or exit the programme. Select this after entering the key. As shown in the middle of (fig1.2), 
 you can encrypt, decrypt, or exit the application. Option 1 executes the encryption algorithm and prompts you to enter an alphabetical word or phrase, 
 as shown in the last section (fig1.2). For example, the user typed "coventry" (fig1.3)
 
