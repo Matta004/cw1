@@ -54,7 +54,7 @@ def encrypt():
     msg=msg.upper()
     msg=msg.replace(" ", "")             
     i=0
-    with open('Encrypted text', 'w') as f:
+    with open('decripted text', 'w') as f:
         f.write(msg)
 
     for s in range(0,len(msg)+1,2):
@@ -64,6 +64,7 @@ def encrypt():
     if len(msg)%2!=0:
         msg=msg[:]+'X'
     print("CIPHER TEXT:",end=' ')
+   
     while i<len(msg):
         loc=list()
         loc=locindex(msg[i])
@@ -85,7 +86,7 @@ def decrypt():
     print("PLAIN TEXT:",end=' ')
     i=0
     plain=""
-    with open('decrypted text', 'w') as f:
+    with open('encripted text', 'w') as f:
         f.write(msg)
     while i<len(msg):
         loc=list()

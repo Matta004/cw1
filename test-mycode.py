@@ -1,9 +1,14 @@
 import unittest
-import decrypt
-class test_my_code(unittest.TestCase):
-    def test_encrypt(self):
-        test1 = decrypt.encrypt("COVENTRY")
-        self.assertEqual("LC UY MU AK",test1,"incorrect")
+import code
 
-if __name__ == "__main__":
-    unittest.main()
+class Testmycode(unittest.TestCase):
+
+    def encrypt_test(self):
+        text1 = code.encrypt(6,"")
+        self.assertEqual(text1,"", "")
+
+    def decrypt_test(self):
+        text1 = code.decrypt("", 6, "")
+        self.assertEqual(text1,"", 6, "")
+
+
